@@ -1,26 +1,28 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "this is server ",
-  "main": "index.js",
-  "scripts": {
-    "serve": "nodemon index.js",
-    "test": "nodemon test.js"
-  },
-  "author": "gaojian1226",
-  "license": "ISC",
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^5.0.0-alpha.8",
-    "mongoose": "^5.9.20"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/gaojian1226/server.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gaojian1226/server/issues"
-  },
-  "homepage": "https://github.com/gaojian1226/server#readme"
+    "name": "server",
+    "version": "1.0.0",
+    "description": "this is server ",
+    "main": "index.js",
+    "scripts": {
+        "serve": "nodemon index.js",
+        "test": "nodemon test/index.js",
+        "dev": "supervisor index.js"
+    },
+    "author": "gaojian1226",
+    "license": "ISC",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^5.0.0-alpha.8",
+        "inflection": "^1.12.0",
+        "mongoose": "^5.9.20"
+    },
+    "devDependencies": {},
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/gaojian1226/server.git"
+    },
+    "bugs": {
+        "url": "https://github.com/gaojian1226/server/issues"
+    },
+    "homepage": "https://github.com/gaojian1226/server#readme"
 }

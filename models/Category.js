@@ -1,5 +1,6 @@
-const mongoose = require('mongoose')
-const schema = new mongoose.Schema({
+const createModel = require('../middleware')
+const schema = {
     name: { type: String }
-})
-module.exports = mongoose.model('Category', schema)
+}
+
+module.exports = createModel('Categorise', schema)

@@ -6,7 +6,7 @@ const app = express();
 app.use(require('cors')())
 app.use(express.json())
     // 加入admin的路由
-require('./routes/admin/index')(app)
+require('./routes/index')(app)
 require('./plugins/db')(app)
 
 app.listen(port, () => {
